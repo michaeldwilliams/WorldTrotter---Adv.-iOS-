@@ -27,20 +27,34 @@ class SlideTransition: NSObject, UIViewControllerAnimatedTransitioning {
         let container = transitionContext.containerView
         guard let toView = transitionContext.view(forKey: .to),
             let fromView = transitionContext.view(forKey: .from) else {
-                preconditionFailure("Transition started with mission context info!")
+                preconditionFailure("Transition started with missing context info!")
         }
         container.addSubview(toView)
         
-        toView.transform = offscreenTransform(for: toView, inContainer: container, isReversed: true)
+        guard let toSnap = toView.snapshotView(afterScreenUpdates: true), let fromSnap = fromView.snapshotView(afterScreenUpdates: true) else {
+            return
+        }
+        
+        fromSnap.frame = fromView.frame
+        toSnap.frame = toView.frame
+        
+        container.addSubview(toSnap)
+        container.addSubview(fromSnap)
+        
+        toView.removeFromSuperview()
+        fromView.removeFromSuperview()
+        
+        toSnap.transform = offscreenTransform(for: toSnap, inContainer: container, isReversed: true)
         
         let moveViewsClosure = {
-            toView.transform = .identity
-            fromView.transform = self.offscreenTransform(for: fromView, inContainer: container, isReversed: false)
+            toSnap.transform = .identity
+            fromSnap.transform = self.offscreenTransform(for: fromSnap, inContainer: container, isReversed: false)
         }
         
         let cleanUpClosure = { (didComplete:Bool) in
-            toView.transform = .identity
-            fromView.transform = .identity
+            container.addSubview(toView)
+            toSnap.removeFromSuperview()
+            fromSnap.removeFromSuperview()
             transitionContext.completeTransition(true)
         }
         

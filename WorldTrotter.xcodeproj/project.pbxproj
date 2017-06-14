@@ -18,6 +18,8 @@
 		6BB4AB781B7BFBA700967615 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4AB771B7BFBA700967615 /* MapViewController.swift */; };
 		6BB4ABBE1B8291D600967615 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BB4ABC01B8291D600967615 /* Localizable.strings */; };
 		F90021ED1EF049E800033C48 /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90021EC1EF049E800033C48 /* SlideTransition.swift */; };
+		F9AF1CFA1EF19EBD0059C19F /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1CF91EF19EBD0059C19F /* BlueViewController.swift */; };
+		F9AF1CFC1EF1A03E0059C19F /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1CFB1EF1A03E0059C19F /* ModalTransition.swift */; };
 		F9FA395F1EF044A5003E140D /* TabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA395E1EF044A5003E140D /* TabDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		6BB4ABC11B8291D800967615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6BB4ABC21B8291D900967615 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F90021EC1EF049E800033C48 /* SlideTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
+		F9AF1CF91EF19EBD0059C19F /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		F9AF1CFB1EF1A03E0059C19F /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 		F9FA395E1EF044A5003E140D /* TabDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +120,9 @@
 				6BB4AB711B7BD4C500967615 /* ConversionViewController.swift */,
 				6BB4AB431B7A5D4200967615 /* AppDelegate.swift */,
 				F90021EC1EF049E800033C48 /* SlideTransition.swift */,
+				F9AF1CFB1EF1A03E0059C19F /* ModalTransition.swift */,
 				F9FA395E1EF044A5003E140D /* TabDelegate.swift */,
+				F9AF1CF91EF19EBD0059C19F /* BlueViewController.swift */,
 				6BB4AB471B7A5D4200967615 /* Main.storyboard */,
 				6BB4AB771B7BFBA700967615 /* MapViewController.swift */,
 				6BB4ABC01B8291D600967615 /* Localizable.strings */,
@@ -284,7 +290,9 @@
 				6BB4AB781B7BFBA700967615 /* MapViewController.swift in Sources */,
 				F9FA395F1EF044A5003E140D /* TabDelegate.swift in Sources */,
 				6BB4AB441B7A5D4200967615 /* AppDelegate.swift in Sources */,
+				F9AF1CFA1EF19EBD0059C19F /* BlueViewController.swift in Sources */,
 				F90021ED1EF049E800033C48 /* SlideTransition.swift in Sources */,
+				F9AF1CFC1EF1A03E0059C19F /* ModalTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
