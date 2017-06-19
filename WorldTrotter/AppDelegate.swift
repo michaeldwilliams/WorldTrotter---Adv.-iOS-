@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             preconditionFailure("Unexpected root hierarchy in main storyboard")
         }
         
-        tabDelegate = TabDelegate()
-        tabBarController.delegate = tabDelegate
+        tabDelegate = TabDelegate(tabBarController: tabBarController)
+        tabBarController.delegate = tabDelegate as UITabBarControllerDelegate
         return true
     }
 

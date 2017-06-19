@@ -20,6 +20,7 @@
 		F90021ED1EF049E800033C48 /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90021EC1EF049E800033C48 /* SlideTransition.swift */; };
 		F9AF1CFA1EF19EBD0059C19F /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1CF91EF19EBD0059C19F /* BlueViewController.swift */; };
 		F9AF1CFC1EF1A03E0059C19F /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1CFB1EF1A03E0059C19F /* ModalTransition.swift */; };
+		F9E1BF021EF44E0100941CFD /* SlideInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1BF011EF44E0100941CFD /* SlideInteraction.swift */; };
 		F9FA395F1EF044A5003E140D /* TabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA395E1EF044A5003E140D /* TabDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		F90021EC1EF049E800033C48 /* SlideTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
 		F9AF1CF91EF19EBD0059C19F /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		F9AF1CFB1EF1A03E0059C19F /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		F9E1BF011EF44E0100941CFD /* SlideInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInteraction.swift; sourceTree = "<group>"; };
 		F9FA395E1EF044A5003E140D /* TabDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				F9AF1CFB1EF1A03E0059C19F /* ModalTransition.swift */,
 				F9FA395E1EF044A5003E140D /* TabDelegate.swift */,
 				F9AF1CF91EF19EBD0059C19F /* BlueViewController.swift */,
+				F9E1BF011EF44E0100941CFD /* SlideInteraction.swift */,
 				6BB4AB471B7A5D4200967615 /* Main.storyboard */,
 				6BB4AB771B7BFBA700967615 /* MapViewController.swift */,
 				6BB4ABC01B8291D600967615 /* Localizable.strings */,
@@ -288,6 +291,7 @@
 			files = (
 				6BB4AB721B7BD4C500967615 /* ConversionViewController.swift in Sources */,
 				6BB4AB781B7BFBA700967615 /* MapViewController.swift in Sources */,
+				F9E1BF021EF44E0100941CFD /* SlideInteraction.swift in Sources */,
 				F9FA395F1EF044A5003E140D /* TabDelegate.swift in Sources */,
 				6BB4AB441B7A5D4200967615 /* AppDelegate.swift in Sources */,
 				F9AF1CFA1EF19EBD0059C19F /* BlueViewController.swift in Sources */,

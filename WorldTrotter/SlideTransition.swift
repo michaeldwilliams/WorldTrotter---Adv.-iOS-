@@ -52,10 +52,12 @@ class SlideTransition: NSObject, UIViewControllerAnimatedTransitioning {
         }
         
         let cleanUpClosure = { (didComplete:Bool) in
-            container.addSubview(toView)
+            let transitionCompleted = didComplete && !transitionContext.transitionWasCancelled
+            let endingView = transitionCompleted ? toView : fromView
+            container.addSubview(endingView)
             toSnap.removeFromSuperview()
             fromSnap.removeFromSuperview()
-            transitionContext.completeTransition(true)
+            transitionContext.completeTransition(transitionCompleted)
         }
         
         UIView.animate(withDuration: animationDuration, animations: moveViewsClosure, completion: cleanUpClosure)
